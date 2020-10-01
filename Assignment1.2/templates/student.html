@@ -1,0 +1,14 @@
+<form method="post" action="/student">
+Name <input name="name" type="text">
+<br>
+Year <input name="year" type="text">
+<br>
+<input type= "submit"> 
+
+</form>
+
+
+{% for stu in all %}
+{{stu.name}} {{stu.year}}
+<br>
+{% endfor %}
